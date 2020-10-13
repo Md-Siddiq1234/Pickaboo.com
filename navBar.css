@@ -1,0 +1,453 @@
+.mainNavBar{
+    z-index: 2;
+    position: relative;
+}
+.hiddenBar{
+    height: 0;
+}
+/* navbar part */
+.navbar{
+    width:auto;
+}
+.searchLog{
+    display:grid;
+    grid-template-columns: 1.75fr 0.35fr;
+    grid-template-rows: 90px;
+    width:auto;
+    padding:1rem 0 0 0;
+    margin:auto;
+    align-items: center;
+}
+.logoSearchCart{
+    position: relative;
+    width: auto;
+    display:grid;
+    grid-template-columns:auto  minmax(510px,590px) auto;
+    align-items: center;
+    justify-content:center;
+}
+.logo{
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 140px;
+    height: 65px;
+}
+.smallLogo{
+    display: none;
+}
+.searchBox{
+    position: relative;
+}
+.searchBox input{
+    width: 100%;
+    height: 38px;
+    padding:5px 50px 5px 10px;
+    position: relative;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.searchBox span{
+    position: absolute;
+    top:10px;
+    right:20px;
+}
+.cart{
+    padding:0 0 0 20px;
+}
+.cartIcon{
+    padding:9px;
+    color:#11a0db;
+}
+.cart .MyCart{
+    position: relative;
+    padding: 9px 15px 8px;
+    background: #dcdcdc;
+    color:#282828;
+    font-size: 13px;
+}
+
+.logRegister{
+    justify-self: center;
+    font-size: 13px;
+}
+.logRegister span i{
+    padding:10px;
+}
+.searchBesideCart{
+    display: none;
+}
+
+/* menuBar part */
+.menubar{
+    background: #11a0db;
+}
+.menuSubBar{
+    display: grid;
+    margin:0 auto;
+    width:1180px;
+    grid-template-columns:655px minmax(102px,492px);
+    grid-template-rows: auto;
+    align-items: center;
+    padding-left: .5rem;
+}
+.smartFeatureElectronics{
+    display: grid;
+   grid-template-columns:1fr 1fr 1.4fr 0.6fr;
+   grid-template-rows: 48px;
+   align-items: center;
+}
+.commonBox{
+    justify-self: center;
+    width: auto;
+    position: relative;
+}
+.lifestyle{
+    justify-self: start;
+    padding-left: 2rem;
+}
+ .title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding:15px 15px 16px 15px;
+}
+.electronicsList ul li {
+    color:black;
+    font-size: medium;
+}
+.accessoriesList.commonList{
+    padding:5px 2px 5px 0;
+    width: auto;
+}
+.accessoriesList ul{
+    width: 160px;
+}
+.accessoriesList.commonList ul li{
+    color:#434343;
+    padding:0.3rem 0 0.3rem 0.5rem;
+}
+.accessoriesList ul li h3{color:black;}
+.lisStyle{
+    z-index: 0;
+}
+.lifestyleList ul li{
+    padding:0.5rem 0 0.3rem 1.5rem;
+    color:#434343;
+}
+.lifestyleList ul li h3{
+    color:black;
+}
+.commonList ul li{
+    padding:0.5rem 0 0.3rem 1.5rem;
+    z-index:2;
+}
+.commonList{
+        display: none;
+        position: absolute;
+        top:47px;
+        left:-2px;
+        padding:2px 0 5px 0;
+        background: white;
+        color:#434343;
+        font-weight:600;
+        font-size: small;
+        border:1px solid rgba(0,0,0,0.2);
+        line-height:20.15px;
+        width: 12rem;
+        box-shadow: 0 1px 3px #e1e1e1;
+        z-index: 2;
+}
+ul li{
+    list-style: none;
+}
+.searchIcon,.search{
+    display: none;
+}
+@media screen and (max-width:1200px){
+    .searchLog,.menuSubBar{
+        width:auto;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .commonList{
+        width:9rem;
+    }
+}
+@media screen and (max-width:1063px) and (min-width:1025px){
+    .searchLog{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto;
+        grid-row-gap: 0px;
+    }
+    .logRegister{
+       background: #11a0db;
+       justify-self: stretch;
+       align-self: center;
+       text-align: right;
+        padding:0.5rem 1.5rem 0.5rem 1rem;
+    }
+    .accessoriesList.commonList{
+        left:-1rem;
+    }
+    .accessoriesList.commonList ul{
+        width: 145px;
+    }
+}
+@media screen and (max-width:1024px){
+    .searchLog{
+        grid-template-columns: 1.5fr 0.5fr;
+        margin-bottom: 0;
+    }
+    .logo{
+        padding:0;
+    }
+    .logoSearchCart{
+        grid-template-columns: auto minmax(293px,390px) auto;
+    }
+    .accessoriesList.commonList{
+        left:-5rem;
+    }
+    .accessoriesList.commonList ul{
+        width: 130px;
+    }
+}
+@media screen and (max-width:890px){
+    .accessoriesList.commonList{
+        left:-10rem;
+    }
+    .accessoriesList.commonList ul{
+        width: 125px;
+    }
+    .lifestyleList.commonList{left:-3rem;}
+}
+ @media screen and (max-width:812px){
+    .menuSubBar{
+        grid-template-columns: minmax(500px,655px);
+        grid-template-rows: repeat(2,48px);
+    }
+    .lifestyleList.commonList{left:-2rem;}
+}
+@media screen and (max-width:790px){
+    .mainNavBar{
+        height: 0;
+    }
+    .searchLog{
+        padding:0 1rem 0 0;
+        position: relative;
+        grid-template-columns: 1fr;
+        background:#11a0db;
+        grid-template-rows: 75px;
+        width:100vw;
+        position: fixed;
+        top:0;
+    }
+    .searchLog.positionRelative{
+        width: auto;
+        position: relative;
+    }
+    .logoSearchCart{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cart{
+        justify-self: end;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .logo .searchIcon{
+        display: inline-block;
+        padding:10px;
+        color: white;
+    }
+    .cart span{
+        padding:10px;
+        margin: 0 5px;
+        background: white;
+    }
+    .colorWhite{border-radius: 5px;}
+     .colorWhite:hover{
+        background: red;
+        color:white;
+        transition: 0.5s;
+    }
+    .cart .searchBesideCart {
+        display: inline-block;
+        color:#11a0db;
+    }
+    .searchBox .search{
+        display:inline-block;
+        padding:9px;
+        text-align: center;
+        background: #71a3c5;
+        top:10px;
+        right: 10px;
+        color:white;
+    border-radius: 5px;
+    }
+    .searchBox{
+        display: none;
+        position: absolute;
+        bottom: -60px;
+        right:0%;
+        top:65px;
+        padding: 10px;
+        width: 50%;
+        border-radius: 5px;
+    }
+    .searchBox.visible{
+        display: inline-block;
+    }
+    .logo img{
+        width: 100px;
+        height: 50px;
+    }
+   .smallLogo{display: inline-block;width: auto;}
+   .pickabooLogo, .cart .MyCart,.searchBox .fa-search, .menubar, .logRegister{
+        display: none;
+    }
+
+    /* hiddenbar part */
+    /* menuAccount part */
+.hiddenBar{
+    max-width: 90vw;
+}
+.menu{
+    color:#11a0db;
+    background: white;
+}
+
+.account{
+    color:white;
+    background: #11a0db;
+}
+.menuAccount{
+    width:90vw;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.menuAccount div{
+    width: 50%;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuAccount .account{
+    flex-direction: row;
+}
+/* hiddenMenuBar part */
+
+.hiddenMenuBar{
+    width: 90vw;
+    transform: translateX(-100vw);
+    transition: 1s;
+    z-index:2;
+    background: #ffff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.hiddenMenuBar .menuSubBar{
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+    max-width :auto;
+    height: auto;
+    margin: 0;
+    padding:0;
+}
+.hiddenMenuBar .menuSubBar .smartFeatureElectronics{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+}
+.smartFeatureElectronics > div{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    justify-self: left;
+    width: 100%;
+}
+.hiddenBar .title{
+    color:#282828;
+    transition: 0.1s;
+}
+.hiddenBar .title:hover{
+    background:#11a0db;
+    color:white;
+}
+.menuSubBar .lifestyle{
+    padding:0;
+    width: 100%;
+}
+.hiddenBar .title:before{
+    content: "+";
+    position: absolute;
+    right: 10px;
+    top:0px;
+    font-size: 2rem;
+    padding:0 10px 0 20px;
+    border-left: 1px solid #e1e1e1;
+    height: 100%;
+}
+.hiddenMenuBar .hiddenList{
+    height: 0;
+    overflow: hidden;
+    padding:0 15px 0px 15px;
+}
+.hiddenList ul li{
+    padding:0.3rem 0rem 0.3rem 1rem;
+    font-size: 13px;
+}
+.hiddenList ul li:hover{
+    transition: 0.5s;
+    margin-left:10px;
+    color:#11a0db;
+    background:rgba(0,0,0,0.1);
+}
+.hiddenList.electronicsList ul li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.hiddenList ul li:last-child{
+    padding-bottom: 1rem;
+}
+.hiddenMenuBar .hiddenList.exposed{
+    height: 100%;
+    overflow: auto;
+}
+
+.hiddenAccountBar{
+    display:flex;
+    flex-direction: column;
+    width: 90vw;
+    transform: translateX(-100vw);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    transition: 1s;
+    background: #ffff;
+    z-index: 2;
+}
+.hiddenAccountBar span {
+    display: block;
+    padding:10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    color:#282828;
+    font-size: 13px;
+    font-weight: bold;
+}
+.hiddenAccountBar span:hover{
+    color:#11a0db;
+}
+.hiddenAccountBar span i{
+    margin-right: 5px;
+}
+
+}
+@media screen and (max-width:634px){
+    .searchBox{width: 95%;bottom: -55px;}
+    .searchIcon .fa-2x{ font-size: 24px;}
+    .logo .searchIcon{padding:5px;}
+}
